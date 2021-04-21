@@ -259,46 +259,84 @@ class: inverse center middle
 
 ---
 
+.left-column[
+  ## Left column title
+]
+.right-column[
+ A whole sentence
+
++ one `Markdown` bullet point
+{{content}}
+
+]
+
+--
+
++ a second bullet point
+{{content}}
+
+--
+
++ a third bullet point
+{{content}}
+
+--
+
+    + a sub level
+
+---
+
 ## Power depends on effect size
 
 .pull-left[
 
 - Need to decide on expected effect size, ideally for specific field
 
+{{content}}
+
+]
+
 --
 
-- *Not* based on under-powered previous studies
-- *Definitely not* based on under-powered pilot study!
+- *Not* based on under-powered previous studies & <br>
+*Definitely not* based on under-powered pilot study!
+{{content}}
 
 --
 
 - Look for **meta-analyses** that consider publication bias.
+{{content}}
 
 --
 
 - Effect sizes can easily be converted (e.g., *r* to *d* or *f*), e.g., with this [online converter](https://www.escal.site/)
+{{content}}
 
 --
 
 - Always express the association/difference as a share of the variance (true variance + measurement error).
-]
+
+--
 
 .pull-right[
 
---
 
 - If necessary, consider heuristics, but not (just) Cohen!
 
 > Benchmarks are "recommended for use only when no better basis for estimating the index is available" (Cohen, 1988)
 
+{{content}}
+
+]
+
 --
 
 ![Observed effect sizes in social psychology](power benchmarks.jpg)
+{{content}}
+
 --
 
 - Other fields (e.g., [education](https://www.bristol.ac.uk/media-library/sites/cmpo/documents/WP15337_Web_Version.pdf)) have smaller average effect sizes, and many reviews might suffer from publication bias
-
-]
 
 ---
 
@@ -328,37 +366,49 @@ class: inverse center middle
 
 - Let's consider testing a large main effect (giving people a placebo pill, assuming *d* = .6) - 44 participants per group, 88 in total for 80 % power.
 
+{{content}}
+
+]
+
 --
 
 - Now, let's hypothesize that some moderator *eliminates* the effect in a 2x2 design (e.g., telling some that it is a placebo). Now we have four groups, and a smaller effect - so need *twice* the number of participants *per cell* - instead of 2 * 44, now 2 * 2 * (2 * 44), i.e. 4x the original sample.
+
+{{content}}
 
 --
 
 - Usually, moderator won't *eliminate* the effect, but *attenuate* it. If 30% of effect remains, we need 4 times as many per cell - 8x the original sample.
 
+{{content}}
+
 --
 
 - See [Datacolada](http://datacolada.org/17) for further details and the implications for three-way interactions (*spoiler:* need 32 times the sample size.)
 
-]
+--
 
 .pull-right[
 
---
+#### Difficulties with effect size estimation
 
-## Difficulties with effect size estimation
+{{content}}
+]
 
 --
 
 - Effect size very hard to estimate. Best approach can be to draw the expected simple slopes and identify the expected pattern of means.
+{{content}}
 
 --
 
 - There is an intuitive [web app](https://markhw.shinyapps.io/power_twoway/) to support this - but did not work as of today. If you have RStudio, you can also [download it from Github](https://github.com/markhwhiteii/power_twoway) and run it locally.
+{{content}}
 
 --
 
 - A slightly less intuitive but more powerful webapp can be found [here](https://shiny.ieis.tue.nl/anova_power/) - also allows for between-factors and produces reports that you can save.
+{{content}}
 
 --
 
