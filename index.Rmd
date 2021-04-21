@@ -259,33 +259,6 @@ class: inverse center middle
 
 ---
 
-.left-column[
-  ## Left column title
-]
-.right-column[
- A whole sentence
-
-+ one `Markdown` bullet point
-{{content}}
-
-]
-
---
-
-+ a second bullet point
-{{content}}
-
---
-
-+ a third bullet point
-{{content}}
-
---
-
-    + a sub level
-
----
-
 ## Power depends on effect size
 
 .pull-left[
